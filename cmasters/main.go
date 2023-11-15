@@ -1,6 +1,10 @@
 package main
 
-import "miqgo.com/go/cmasters/api"
+import (
+	"fmt"
+
+	"miqgo.com/go/cmasters/api"
+)
 
 func main() {
 
@@ -9,6 +13,6 @@ func main() {
 		panic(error)
 	}
 
-	print(rate)
+	fmt.Printf("1 BTC = %f USD\n", rate.Price)
 
 }
